@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    kubernetes = {
-      source  = "hashicorp/kubernetes"
-      version = "2.37.1"
-    }
-  }
-}
 resource "aws_iam_role" "globalrole" {
   name = "eksclusterrole"
 
